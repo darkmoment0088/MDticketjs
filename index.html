@@ -1,7 +1,60 @@
 <html>
 <head>
-<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/movingtext.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css"> 
+
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+p {
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 60em;
+  margin: 0 0 0 -20em;
+}
+p span {
+  font: 700 3em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 <body>
 <div>
@@ -42,10 +95,18 @@
     </div>
 	<!--real banner-->
 	<div class="banner" onclick="modify_qty(1)">
-	<div>Queue Management and Customer Service
-with Corporate Networking</div>
-	
+<p>
+  Queue Management and Customer Service with Corporate Networking
+  <span>
+   Queue Management System
+  </span>
+  &mdash;push queue management to its full potential. &mdash;
+</p>
 	</div>
+	
+</div>
+
+
 </div>
 </body>
 </html>
