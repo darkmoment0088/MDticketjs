@@ -9,6 +9,7 @@ html, body {
 }
 
 .displaytext {
+	
 	color: red;
 	font-family: digital-clock-font;
 	font-size: 2em;	
@@ -25,8 +26,9 @@ html, body {
 .box {
 	/* basics */
 	position: relative;
-    display: flex;
+    display: table-cell;
 	background-color: #605a5a;
+	vertical-align: middle;
 	float: left;
 	color: #C4BE92;
     text-align: center;
@@ -38,6 +40,7 @@ html, body {
     width:20%; 
 	height: 50%;
 	margin: 0 auto;	
+
   	-webkit-box-shadow: 0px 0px 12px 0px #000;
     box-shadow: 0px 0px 12px 0px #000;
   
@@ -68,8 +71,14 @@ color: white;
 }
 
 .mdBackground{
-font-size: 20pt;
+display: table;
+  margin: 0 auto;
 background-color: black;
+}
+.tablestyle{
+	font-size: 20pt;
+	width: 100%;
+	height: 100%;
 }
 
 .row {
