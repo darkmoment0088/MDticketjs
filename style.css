@@ -1,15 +1,21 @@
 body {
     font-family: helvetica, arial, verdana, sans-serif;
+	
+	overflow: hidden;
+}
+
+html, body {
+	height: 100%;
 }
 
 .displaytext {
 	color: red;
 	font-family: digital-clock-font;
-	font-size: 50px;	
+	font-size: 2em;	
 }
  table {
     margin: 0 auto; /* or margin: 0 auto 0 auto */
-	border-spacing: 10px;
+	border-spacing: 7.5pt;
   }
   
 @font-face{
@@ -56,12 +62,13 @@ body {
 
 .label {
 display: block;
-font-size: 25px;
+font-size: 1em;
 font-family: arial;
 color: white;
 }
 
 .mdBackground{
+font-size: 20pt;
 background-color: black;
 }
 
@@ -74,6 +81,25 @@ background-color: black;
     position:relative;
     left:-50%;
 }
+
+.bannerbox {
+  max-width: 70vw;
+  padding: 22.5pt;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  font-size: 25pt;
+  line-height: 1.5;
+  transform: translateY(-50%);
+  perspective: 400px;
+}
+
+.source {
+  color: skyblue;
+  margin: 0 auto;
+}
+
+
 div {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
